@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(pip install:*)",
+      "Bash(npm run build:*)",
+      "Bash(pip show:*)",
+      "Bash(python:*)",
+      "Bash(where:*)",
+      "Bash(test:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "Bash(\"C:/Program Files/nodejs/npm.cmd\" run build)",
+      "Bash(python3:*)",
+      "Bash(npx vite build:*)",
+      "Bash(findstr:*)",
+      "Bash(pip freeze:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:app.unpkg.com)",
+      "WebFetch(domain:codesandbox.io)",
+      "Bash(dir:*)"
+    ]
+  }
+}
