@@ -3,7 +3,7 @@ FROM node:20-slim AS frontend-builder
 
 WORKDIR /frontend
 COPY frontend/package*.json ./
-RUN npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps && chmod +x node_modules/.bin/*
 COPY frontend/ ./
 RUN npm run build
 
