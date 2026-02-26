@@ -3,9 +3,9 @@ FROM node:20-slim AS frontend-builder
 
 WORKDIR /frontend
 COPY frontend/package*.json ./
-RUN npm install --legacy-peer-deps && chmod +x node_modules/.bin/*
+RUN npm install --legacy-peer-deps
 COPY frontend/ ./
-RUN npm run build
+RUN node ./node_modules/vite/bin/vite.js build
 
 # ── Stage 2: Python backend ───────────────────────────────────────────────
 FROM python:3.11-slim
